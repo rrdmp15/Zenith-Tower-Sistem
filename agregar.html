@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Tower Zenith</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="Listas.html">Listas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seleccionar"></section>
+        <section class="agregar">
+            <h1>Agregar</h1>
+
+            <a href="#">Reclutas</a>
+            <a href="#">Team</a>
+            <a href="#">Skills</a>
+            <a href="#">Modulos</a>
+            <a href="#">Evaluacion</a>
+        </section>
+
+        <section class="eliminar">
+            <h1>Eliminar</h1>
+
+            <form>
+                <select name="eliminar">
+                    <option value="reclutas">Reclutas</option>
+                    <option value="team">Team</option>
+                    <option value="skill">Skills</option>
+                    <option value="modulo_skill">Modulos</option>
+                    <option value="evaluacion">Evaluacion</option>
+                </select>
+
+                <input type="text" name="id_recluta" placeholder="ID recluta">
+                <input type="text" name="id_team" placeholder="ID team">
+                <input type="text" name="id_skill" placeholder="ID skill">
+                <input type="text" name="id_modulo" placeholder="ID modulo">
+                <input type="text" name="id_evaluacion" placeholder="ID evaluacion">
+
+
+                <input type="submit" value="Eliminar">
+                <input type="button" value="Volver">
+            </form>
+
+        </section>
+
+        <section class="Buscar">
+            <h1>Buscar</h1>
+
+            <form>
+                <select name="buscar">
+                    <option value="reclutas">Reclutas</option>
+                    <option value="team">Team</option>
+                    <option value="skill">Skills</option>
+                    <option value="modulo_skill">Modulos</option>
+                    <option value="evaluacion">Evaluacion</option>
+                </select>
+
+                <input type="text" name="id_recluta" placeholder="ID recluta">
+                <input type="text" name="id_team" placeholder="ID team">
+                <input type="text" name="id_skill" placeholder="ID skill">
+                <input type="text" name="id_modulo" placeholder="ID modulo">
+                <input type="text" name="id_evaluacion" placeholder="ID evaluacion">
+
+                <input type="submit" value="Buscar">
+                <input type="button" value="Volver">
+            </form>
+        </section>
+
+        <section class="agregarReclutas">
+            <h1>Agregar Reclutas</h1>
+            <form id="formReclutas">
+                <input type="text" placeholder="Documento" name="id">
+                <input type="text" placeholder="Nombre" name="name">
+                <input type="number" placeholder="Telefono" name="phone">
+                <input type="email" placeholder="Correo Electronico" name="email">
+                <input type="text" placeholder="direccion" name="adress">
+                <input type="date" placeholder="Fecha de Nacimiento" name="date_birth">
+                <input type="date" placeholder="Fecha de Ingreso" name="date_enter">
+                <select name="id_team">
+                    <option value="1">Sputnik</option>
+                    <option value="2">Artemis</option>
+                    <option value="3">Apolo</option>
+                </select>
+
+                <input type="submit" value="Agregar">
+                <input type="button" value="Editar">
+                <input type="button" value="Volver">
+            </form>
+        </section>
+
+        <section class="agregarTeam">
+            <h1>Agregar Team</h1>
+            <input type="text" placeholder="ID" name="id">
+            <input type="text" placeholder="Nombre del Team" name="name">
+            <input type="text" placeholder="Nombre del Trainer" name="name_trainer">
+            <input type="submit" value="Agregar">
+            <input type="button" value="Editar">
+            <input type="button" value="Volver">
+        </section>
+
+        <section class="AgregarSkills">
+            <h1>Agregar Skills</h1>
+            <input type="text" placeholder="ID" name="id">
+            <input type="text" placeholder="Nombre del Skill" name="name">
+            <input type="submit" value="Agregar">
+            <input type="button" value="Editar">
+            <input type="button" value="Volver">
+        </section>
+
+        <section class="agregarModuloSKill">
+            <h1>Agregar Modulo</h1>
+            <input type="text" placeholder="ID" name="id">
+            <input type="text" placeholder="Nombre del Modulo" name="name">
+           
+            <select name="id_skill">
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JS</option>
+            </select>
+
+            <input type="submit" value="Agregar">
+            <input type="button" value="Editar">
+            <input type="button" value="Volver">
+        </section>
+
+        <section class="agregarEvaluacion">
+            <h1>Agregar Evaluacion</h1>
+            <input type="text" placeholder="ID del recluta" name="id_recluta">
+            
+            <select name="id_modulo">
+                <option value="1">Maquetacion Web</option>
+                <option value="2">Diseño web</option>
+                <option value="3">Programacion Basica</option>
+            </select>
+
+            <input type="number" placeholder="Nota del Modulo" name="nota">
+            <input type="submit" value="Agregar">
+            <input type="button" value="Editar">
+            <input type="button" value="Volver">
+        </section>
+       
+    </main>
+</body>
+</html>
