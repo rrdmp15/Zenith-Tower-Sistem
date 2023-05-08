@@ -1,45 +1,50 @@
 {
-    "reclutas" : [
-        {
-            "id" : "1",
-            "name" : "Dayismar Rodriguez",
-            "phone" : "3118463744",
-            "email" : "rdayismar@gmail.com",
-            "adress" : "almenares de san juan",
-            "date_birth" : "06/05/2004",
-            "date_enter" : "28/02/2023",
-            "id_team" : "1"
-        }
-    ],
-
-    "team" : [
-        {
-            "id" : "1",
-            "name" :"Sputnik",
-            "name_trainer" : "Miguel Castro"
-        }
-    ],
-
-    "skill" : [
-        {
-            "id" : "1",
-            "name": "HTML"
-        }
-    ],
-
-    "modulo_skill" : [
-        {
-            "id" : "1",
-            "name" : "Programacion Basica",
-            "id_skill" : "1"
-        }
-    ],
-
-    "evaluacion" : [
-        {
-            "id_recluta" : "1",
-            "id_modulo" : "1",
-            "nota" : "5"
-        }
-    ]
+  "reclutas": [
+    {
+      "id": "2",
+      "name": "Dayismar Rodriguez",
+      "phone": "3118463744",
+      "email": "rdayismar@gmail.com",
+      "adress": "almenares de san juan",
+      "date_birth": "2004-05-06",
+      "date_enter": "2023-02-28",
+      "id_team": "1"
+    }
+  ],
+  "team": [
+    {
+      "id": "2",
+      "name": "Artemis",
+      "name_trainer": "velmer"
+    }
+  ],
+  "skill": [
+    {
+      "id": "1",
+      "name": "HTML"
+    },
+    {
+      "id": "2",
+      "name": "CSS"
+    }
+  ],
+  "modulo_skill": [
+    {
+      "id": "1",
+      "name": "Programacion Basica",
+      "id_skill": "1"
+    },
+    {
+      "id": "2",
+      "name": "Diseño web",
+      "id_skill": "2"
+    }
+  ],
+  "evaluacion": [
+    {
+      "id_recluta": "1",
+      "id_modulo": "1",
+      "nota": "5"
+    }
+  ]
 }
