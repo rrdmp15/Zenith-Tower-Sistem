@@ -6,9 +6,9 @@
       "phone": "3118463744",
       "email": "rdayismar@gmail.com",
       "adress": "almenares de san juan",
-      "date_birth": "2004-05-06",
+      "date_birth": "2006-05-06",
       "date_enter": "2023-02-28",
-      "id_team": "1"
+      "teamId": "1"
     },
     {
         "id": "2",
@@ -18,7 +18,7 @@
         "adress": "buacramanga",
         "date_birth": "2003-07-10",
         "date_enter": "2023-01-03",
-        "id_team": "2"
+        "teamId": "2"
       },
       {
         "id": "3",
@@ -28,7 +28,7 @@
         "adress": "piedecuesta",
         "date_birth": "2000-06-05",
         "date_enter": "2022-12-20",
-        "id_team": "3"
+        "teamId": "3"
       }
   ],
   "team": [

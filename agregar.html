@@ -5,89 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zenith Tower | Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" type="module" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h2>Tower Zenith</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Data</a></li>
-                <li><a href="Listas.html">Listas</a></li>
-            </ul>
-        </nav>
-    </header>
+    <my-header></my-header>
 
     <main>
         <section class="seleccionar">
             <h1>¿Que quieres hacer?</h1>
 
-            <a href="">Buscar data</a>
-            <a href="">Agregar o Editar data</a>
-            <a href="">Eliminar Data</a>
+            <a class="btn" id="buscarData">Buscar data</a>
+            <a class="btn" id="agregarData">Agregar o Editar data</a>
+            <a class="btn" id="eliminarData">Eliminar Data</a>
         </section>
 
-        <section class="agregar">
+        <section class="agregar hidden">
             <h1>Agregar</h1>
 
-            <a href="#">Reclutas</a>
-            <a href="#">Team</a>
-            <a href="#">Skills</a>
-            <a href="#">Modulos</a>
-            <a href="#">Evaluacion</a>
+            <a href="#" id="reclutas">Reclutas</a>
+            <a href="#" id="team">Team</a>
+            <a href="#" id="skill">Skills</a>
+            <a href="#" id="modulo">Modulos</a>
+            <a href="#" id="evaluacion">Evaluacion</a>
+
+            <input type="button" value="Volver" class="volverAgregar">
         </section>
 
-        <section class="eliminar">
+        <section class="eliminar hidden">
             <h1>Eliminar</h1>
-                <select name="eliminar">
+            <select name="eliminar">
                     <option value="reclutas">Reclutas</option>
                     <option value="team">Team</option>
                     <option value="skill">Skills</option>
                     <option value="modulo_skill">Modulos</option>
                     <option value="evaluacion">Evaluacion</option>
-                </select>
+            </select>
+
+            <input type="button" value="Volver" class="volverEliminar">
+
 
             <form id="formEliminarReclutas">
                 <input type="text" name="id" placeholder="ID recluta">
                 <input type="submit" value="Eliminar Recluta" data-accion="DELETE" id="eliminarRecluta">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverEliminarReclutas">
             </form>
 
             <form action="" id="formEliminarTeam">
                 <input type="text" name="id" placeholder="ID team">
                 <input type="submit" value="Eliminar Team" data-accion="DELETE" id="eliminarTeam">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverEliminarTeam">
             </form>
 
             <form action="" id="formEliminarSkill">
                 <input type="text" name="id" placeholder="ID skill">
                 <input type="submit" value="Eliminar Skill" data-accion="DELETE" id="eliminarSkill">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverEliminarSkill">
             </form>
 
             <form action="" id="formEliminarModulo">
                 <input type="text" name="id" placeholder="ID modulo">
                 <input type="submit" value="Eliminar Modulo" data-accion="DELETE" id="eliminarModulo">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverEliminarModulo">
             </form>
 
             <form action="" id="formEliminarEvaluacion">
                 <input type="text" name="id" placeholder="ID evaluacion">
                 <input type="submit" value="Eliminar Evaluacion" data-accion="DELETE" id="eliminarEvaluacion">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverEliminarEvaluacion">
             </form>
 
 
         </section>
 
-        <section class="Buscar">
+        <section class="buscar hidden">
             <h1>Buscar</h1>
 
-            <select name="buscar">
+            <select name="buscar" id="selectBuscar">
                 <option value="reclutas">Reclutas</option>
                 <option value="team">Team</option>
                 <option value="skill">Skills</option>
@@ -95,38 +92,41 @@
                 <option value="evaluacion">Evaluacion</option>
             </select>
 
-            <form id="formBuscarReclutas">
+            <input type="button" value="Volver" class="volverBuscar">
+
+
+            <form id="formBuscarReclutas" class="hidden">
                 <input type="text" name="id" placeholder="ID recluta">
                 <input type="submit" value="Buscar Recluta" data-accion="SEARCH" id="buscarRecluta">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverBuscarReclutas">
             </form>
 
-            <form action="" id="formBuscarTeam">
+            <form action="" id="formBuscarTeam" class="hidden">
                 <input type="text" name="id" placeholder="ID team">
                 <input type="submit" value="Buscar Team" data-accion="SEARCH" id="buscarTeam">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverBuscarTeam">
             </form>
 
-            <form action="" id="formBuscarSkill">
+            <form action="" id="formBuscarSkill" class="hidden">
                 <input type="text" name="id" placeholder="ID skill">
                 <input type="submit" value="Buscar Skill" data-accion="SEARCH" id="buscarSkill">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverBuscarSkill">
             </form>
 
-            <form action="" id="formBuscarModulo">
+            <form action="" id="formBuscarModulo" class="hidden">
                 <input type="text" name="id" placeholder="ID modulo">
                 <input type="submit" value="Buscar Modulo" data-accion="SEARCH" id="buscarModulo">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverBuscarModulo">
             </form>
 
-            <form action="" id="formBuscarEvaluacion">
+            <form action="" id="formBuscarEvaluacion" class="hidden">
                 <input type="text" name="id" placeholder="ID evaluacion">
                 <input type="submit" value="Buscar Evaluacion" data-accion="SEARCH" id="buscarEvaluacion">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volverBuscarEvaluacion">
             </form>
         </section>
 
-        <section class="agregarReclutas">
+        <section class="agregarReclutas hidden" class="hidden">
             <h1>Agregar Reclutas</h1>
             <form id="formReclutas">
                 <input type="text" placeholder="Documento" name="id">
@@ -144,11 +144,11 @@
 
                 <input type="submit" value="Agregar" data-accion="POST">
                 <input type="submit" value="Editar" data-accion="PUT">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volveragregarReclutas">
             </form>
         </section>
 
-        <section class="agregarTeam">
+        <section class="agregarTeam hidden" class="hidden">
             <h1>Agregar Team</h1>
             <form id="formTeam">
                 <input type="text" placeholder="ID" name="id">
@@ -156,24 +156,24 @@
                 <input type="text" placeholder="Nombre del Trainer" name="name_trainer">
                 <input type="submit" value="Agregar" data-accion="POST">
                 <input type="submit" value="Editar" data-accion="PUT">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volveragregarTeam">
             </form>
             
         </section>
 
-        <section class="AgregarSkills">
+        <section class="AgregarSkills hidden" class="hidden">
             <h1>Agregar Skills</h1>
             <form  id="formSkill">
                 <input type="text" placeholder="ID" name="id">
                 <input type="text" placeholder="Nombre del Skill" name="name">
                 <input type="submit" value="Agregar" data-accion="POST">
                 <input type="submit" value="Editar" data-accion="PUT">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volveragregarSkill">
             </form>
             
         </section>
 
-        <section class="agregarModuloSKill">
+        <section class="agregarModuloSKill hidden" class="hidden">
             <h1>Agregar Modulo</h1>
             <form id="formModulo">
                 <input type="text" placeholder="ID" name="id">
@@ -187,12 +187,12 @@
 
                 <input type="submit" value="Agregar" data-accion="POST">
                 <input type="submit" value="Editar" data-accion="PUT">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volveragregarModuloSKill">
             </form>
             
         </section>
 
-        <section class="agregarEvaluacion">
+        <section class="agregarEvaluacion hidden" class="hidden">
             <h1>Agregar Evaluacion</h1>
             <form id="formEvaluacion">
                 <input type="text" placeholder="ID del recluta" name="id_recluta">
@@ -206,7 +206,7 @@
                 <input type="number" placeholder="Nota del Modulo" name="nota">
                 <input type="submit" value="Agregar" data-accion="POST">
                 <input type="submit" value="Editar" data-accion="PUT">
-                <input type="button" value="Volver">
+                <input type="button" value="Volver" class="volveragregarEvaluacion">
             </form>
             
         </section>
