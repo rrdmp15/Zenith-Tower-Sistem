@@ -1,7 +1,7 @@
 {
   "reclutas": [
     {
-      "id": "2",
+      "id": "1",
       "name": "Dayismar Rodriguez",
       "phone": "3118463744",
       "email": "rdayismar@gmail.com",
@@ -9,13 +9,43 @@
       "date_birth": "2004-05-06",
       "date_enter": "2023-02-28",
       "id_team": "1"
-    }
+    },
+    {
+        "id": "2",
+        "name": "Pepito Perez",
+        "phone": "3215236458",
+        "email": "pepito@gmail.com",
+        "adress": "buacramanga",
+        "date_birth": "2003-07-10",
+        "date_enter": "2023-01-03",
+        "id_team": "2"
+      },
+      {
+        "id": "3",
+        "name": "Marcos Puerta",
+        "phone": "3652125469",
+        "email": "marcos@gmail.com",
+        "adress": "piedecuesta",
+        "date_birth": "2000-06-05",
+        "date_enter": "2022-12-20",
+        "id_team": "3"
+      }
   ],
   "team": [
     {
       "id": "2",
       "name": "Artemis",
-      "name_trainer": "velmer"
+      "name_trainer": "Velmer"
+    },
+    {
+        "id": "1",
+        "name": "Sputnik",
+        "name_trainer": "Miguel"
+    },
+    {
+        "id": "3",
+        "name": "Apolo",
+        "name_trainer": "Jholber"
     }
   ],
   "skill": [
@@ -26,25 +56,44 @@
     {
       "id": "2",
       "name": "CSS"
+    },
+    {
+        "id" : "3",
+        "name" : "JS"
     }
   ],
   "modulo_skill": [
     {
       "id": "1",
-      "name": "Programacion Basica",
+      "name": "Maquetacion Web",
       "id_skill": "1"
     },
     {
       "id": "2",
       "name": "Diseño web",
       "id_skill": "2"
+    },
+    {
+        "id": "3",
+        "name": "Programacion Basica",
+        "id_skill": "3"
     }
   ],
   "evaluacion": [
     {
-      "id_recluta": "1",
+      "id_recluta": "3",
       "id_modulo": "1",
-      "nota": "5"
+      "nota": "3.4"
+    },
+    {
+        "id_recluta": "2",
+        "id_modulo": "2",
+        "nota": "4.5"
+    },
+    {
+        "id_recluta": "1",
+        "id_modulo": "3",
+        "nota": "3.1"
     }
   ]
 }
