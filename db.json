@@ -11,25 +11,55 @@
       "teamId": "1"
     },
     {
-        "id": "2",
-        "name": "Pepito Perez",
-        "phone": "3215236458",
-        "email": "pepito@gmail.com",
-        "adress": "buacramanga",
-        "date_birth": "2003-07-10",
-        "date_enter": "2023-01-03",
-        "teamId": "2"
-      },
-      {
-        "id": "3",
-        "name": "Marcos Puerta",
-        "phone": "3652125469",
-        "email": "marcos@gmail.com",
-        "adress": "piedecuesta",
-        "date_birth": "2000-06-05",
-        "date_enter": "2022-12-20",
-        "teamId": "3"
-      }
+      "id": "2",
+      "name": "Pepito Perez",
+      "phone": "3215236458",
+      "email": "pepito@gmail.com",
+      "adress": "buacramanga",
+      "date_birth": "2003-07-10",
+      "date_enter": "2023-01-03",
+      "teamId": "2"
+    },
+    {
+      "id": "3",
+      "name": "Marcos Puerta",
+      "phone": "3652125469",
+      "email": "marcos@gmail.com",
+      "adress": "piedecuesta",
+      "date_birth": "2000-06-05",
+      "date_enter": "2022-12-20",
+      "teamId": "3"
+    },
+    {
+      "id": "4",
+      "name": "Santiago Carrillo Laguado",
+      "phone": "3118463744",
+      "email": "santi2001.07@gmail.com",
+      "adress": "Av. 7 #5-59 apt 102",
+      "date_birth": "2023-05-03",
+      "date_enter": "2023-05-09",
+      "teamId": "2"
+    },
+    {
+      "id": "8",
+      "name": "Dayismar Rodriguez",
+      "phone": "3118433744",
+      "email": "rdayismar@gmail.com",
+      "adress": "almenares de san juan",
+      "date_birth": "2023-05-17",
+      "date_enter": "2023-05-10",
+      "id_team": "2"
+    },
+    {
+      "id": "j57Vqes",
+      "name": "",
+      "phone": "0",
+      "email": "",
+      "adress": "",
+      "date_birth": "",
+      "date_enter": "",
+      "teamId": "1"
+    }
   ],
   "team": [
     {
@@ -38,14 +68,14 @@
       "name_trainer": "Velmer"
     },
     {
-        "id": "1",
-        "name": "Sputnik",
-        "name_trainer": "Miguel"
+      "id": "1",
+      "name": "Sputnik",
+      "name_trainer": "Miguel"
     },
     {
-        "id": "3",
-        "name": "Apolo",
-        "name_trainer": "Jholber"
+      "id": "3",
+      "name": "Apolo",
+      "name_trainer": "Jholber"
     }
   ],
   "skill": [
@@ -58,42 +88,45 @@
       "name": "CSS"
     },
     {
-        "id" : "3",
-        "name" : "JS"
+      "id": "3",
+      "name": "JS"
     }
   ],
-  "modulo_skill": [
+  "modulos": [
     {
       "id": "1",
       "name": "Maquetacion Web",
-      "id_skill": "1"
+      "skillId": "1"
     },
     {
       "id": "2",
       "name": "Diseño web",
-      "id_skill": "2"
+      "skillId": "2"
     },
     {
-        "id": "3",
-        "name": "Programacion Basica",
-        "id_skill": "3"
+      "id": "3",
+      "name": "Programacion Basica",
+      "skillId": "3"
     }
   ],
   "evaluacion": [
     {
-      "id_recluta": "3",
-      "id_modulo": "1",
+      "id": "1",
+      "reclutaId": "3",
+      "moduloId": "1",
       "nota": "3.4"
     },
     {
-        "id_recluta": "2",
-        "id_modulo": "2",
-        "nota": "4.5"
+      "id": "1",
+      "reclutaId": "2",
+      "id_modulo": "2",
+      "nota": "4.5"
     },
     {
-        "id_recluta": "1",
-        "id_modulo": "3",
-        "nota": "3.1"
+      "id": "1",
+      "reclutaId": "1",
+      "moduloId": "3",
+      "nota": "3.1"
     }
   ]
 }

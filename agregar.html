@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" type="module" defer></script>
+    <script src="agregar.js" type="module" defer></script>
 </head>
 <body>
     <my-header></my-header>
@@ -96,9 +96,19 @@
 
 
             <form id="formBuscarReclutas" class="hidden">
-                <input type="text" name="id" placeholder="ID recluta">
+                <input type="text" name="id" placeholder="Nombre">
                 <input type="submit" value="Buscar Recluta" data-accion="SEARCH" id="buscarRecluta">
                 <input type="button" value="Volver" class="volverBuscarReclutas">
+
+                <!-- <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bodyReclutas"></tbody>
+                </table> -->
             </form>
 
             <form action="" id="formBuscarTeam" class="hidden">
@@ -136,7 +146,7 @@
                 <input type="text" placeholder="direccion" name="adress">
                 <input type="date" placeholder="Fecha de Nacimiento" name="date_birth">
                 <input type="date" placeholder="Fecha de Ingreso" name="date_enter">
-                <select name="id_team">
+                <select name="teamId">
                     <option value="1">Sputnik</option>
                     <option value="2">Artemis</option>
                     <option value="3">Apolo</option>
@@ -179,7 +189,7 @@
                 <input type="text" placeholder="ID" name="id">
                 <input type="text" placeholder="Nombre del Modulo" name="name">
             
-                <select name="id_skill">
+                <select name="skillId">
                     <option value="1">HTML</option>
                     <option value="2">CSS</option>
                     <option value="3">JS</option>
@@ -197,7 +207,7 @@
             <form id="formEvaluacion">
                 <input type="text" placeholder="ID del recluta" name="id_recluta">
             
-                <select name="id_modulo">
+                <select name="moduloId">
                     <option value="1">Maquetacion Web</option>
                     <option value="2">Diseño web</option>
                     <option value="3">Programacion Basica</option>
